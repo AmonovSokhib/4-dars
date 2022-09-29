@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { List } from './components/List/List';
 import { Card } from './components/Card/Card';
 import Loading from './assets/imgs/loading.svg';
@@ -30,12 +30,12 @@ const App = () => {
 
 	return (
 		<div>
-			<div>
-				{/* <form onSubmit={handleInputValue}>
+			{/* <div>
+				<form onSubmit={handleInputValue}>
 					<input ref={inputVal} type='text' placeholder='Search...' />
 					<button type='submit'>Search</button>
-				</form> */}
-			</div>
+				</form>
+			</div> */}
 			<Header setValue={setValue} setSelect={setSelect} />
 
 			{data.length ? (
