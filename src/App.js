@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { List } from './components/List/List';
 import { Card } from './components/Card/Card';
 import Loading from './assets/imgs/loading.svg';
@@ -22,7 +22,7 @@ const App = () => {
 					))}
 				</List>
 			) : (
-				<img src={Loading} />
+				<img src={Loading} alt='loading img' />
 			)}
 		</div>
 	);
