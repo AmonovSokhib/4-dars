@@ -15,7 +15,7 @@ const App = () => {
 				.then((res) => res.json())
 				.then((data) => setData(data))
 				.catch((err) => console.log(err));
-		} else if (select.length && select != 'All') {
+		} else if (select.length && select !== 'All') {
 			fetch(`https://restcountries.com/v3.1/region/${select}`)
 				.then((res) => res.json())
 				.then((data) => setData(data))
